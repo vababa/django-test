@@ -23,4 +23,5 @@ urlpatterns = [
     #url(r'^basicview/(?P<view_num>[0-9]{1,2})$', views.basic_one, name='basic_one' ),
     url(r'^basicview/', include('article.urls'), name='basic_one' ),
     url(r'^', include('article.urls')),
+    url(r'^auth/', include('loginsys.urls')),
 ]
